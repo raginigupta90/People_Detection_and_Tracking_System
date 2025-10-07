@@ -325,7 +325,7 @@ def main(args):
     # finalize: any tracks that were in_zone but disappeared may not have exit logged - log exit for active tracks
     # We will log exits for tracks currently in tracker that are not in zone any more; that's already handled.
     # But for tracks that were in_zone at deregister time, we did not log - to be safe we won't try to resurrect removed tracks;
-    # this is fine for the assignment if video ended.
+    # this is fine for the assignment if video ended. ok
 
     # Save events.csv
     df = pd.DataFrame(events)
